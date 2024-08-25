@@ -93,6 +93,17 @@ body {
   font-size: 30px;
 }
 
+.btnGithub {
+  background-color: #ff81b6;
+  color: #fff;
+  border: none;
+}
+
+.btnGithub:hover {
+  background-color: #e5699e;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .list-group-item i {
       font-size: 30px;
@@ -115,9 +126,22 @@ body {
     width: 70%;
   }
 }
+@media (max-width: 684px) {
+  #containerProjetos {
+    justify-content: center;
+  }
+}
+@media (min-width: 684px) {
+  #containerProjetos {
+    justify-content: space-between;
+  }
+}
 
 @media (max-width: 480px) {
   .logo {
     font-size: 10vw;
   }
+}
+h2{
+  
 }

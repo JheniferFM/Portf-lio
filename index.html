@@ -18,7 +18,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <title>portfólio</title>
+    <title>Portfólio</title>
   </head>
   <body>
     <!-- Cabeçalho -->
@@ -47,7 +47,10 @@
             </a>
           </li>
           <li class="list-group-item fs-2">
-            <a href="mailto:jhenifer@example.com" target="_blank">
+            <a
+              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHnvSsbgdgdFQKnHGcBkgkpFqhlfsJPRbGnqHjJWxGnnvwMPgWpjWGcwZJJCwwZpRTcL"
+              target="_blank"
+            >
               <i class="bi bi-envelope text-danger"></i>
             </a>
           </li>
@@ -55,15 +58,13 @@
       </div>
     </header>
 
+    <!-- mailto:Jhenifer.meneses10@gmail.com -->
+
     <!-- Corpo -->
     <main>
       <!-- Foto de perfil -->
       <div class="profile-container">
-        <img
-          src="./assets/FOTO.png"
-          alt="Foto de perfil"
-          class="profile-pic"
-        />
+        <img src="./assets/FOTO.png" alt="Foto de perfil" class="profile-pic" />
       </div>
 
       <!-- Nome e sobrenome -->
@@ -95,6 +96,80 @@
           <li><i class="bi bi-filetype-py" title="Python"></i></li>
           <li><i class="bi bi-filetype-sql" title="SQL"></i></li>
         </ul>
+      </div>
+
+      <!-- Projetos -->
+      <div class="container-tecnologia">
+        <!-- Titulo projeto -->
+        <h2 class="title-center">Projetos</h2>
+
+        <div
+          class="d-flex p-4 flex-wrap containerProjetos"
+          id="containerProjetos"
+        >
+          <div class="card mt-4" style="width: 18rem">
+            <img
+              src="./assets/moedas.jpg"
+              class="card-img-top"
+              alt="Cards de projetos"
+              style="height: 15.6rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Conversor de moedas</h5>
+              <p class="card-text">
+                Um sistema que permite a conversão de reais em dólar e euro
+              </p>
+              <a
+                href="https://github.com/JheniferFM/Conversor-de-moedas"
+                target="_blank"
+                class="btn w-100 btnGithub"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card mt-4" style="width: 18rem">
+            <img
+              src="./assets/temp.jpg"
+              class="card-img-top"
+              alt="Cards de projetos"
+              style="height: 15.6rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Previsão do tempo</h5>
+              <p class="card-text">
+                Um sistema que permite a conversão de reais em dólar e euro
+              </p>
+              <a
+                href="https://github.com/JheniferFM/Previs-o-do-tempo.git"
+                target="_blank"
+                class="btn w-100 btnGithub"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card mt-4" style="width: 18rem">
+            <img
+              src="./assets/senhas.jpg"
+              class="card-img-top"
+              alt="Cards de projetos"
+              style="height: 15.6rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Gerador de senhas</h5>
+              <p class="card-text">
+                Um sistema que permite a conversão de reais em dólar e euro
+              </p>
+              <a
+                href="https://github.com/JheniferFM/Gerador-de-senhas.git"
+                target="_blank"
+                class="btn w-100 btnGithub"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="div-soft-skils">
@@ -133,6 +208,43 @@
         </ul>
       </div>
     </main>
+
+    <!-- rodapé -->
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="footer-title">Jhenifer F. Meneses</h5>
+            <p>
+              <i class="bi bi-telephone"></i> (61) 99198-7725<br />
+              <i class="bi bi-envelope"></i> Jhenifer.meneses10@gmail.com<br />
+              <i class="bi bi-geo-alt"></i> Brasília, DF
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="bi bi-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p class="footer-copy">
+              © 2024 Jhenifer F. Meneses. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <!-- Bootstrap Javascript -->
   <script
