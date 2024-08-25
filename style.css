@@ -67,6 +67,7 @@ body {
 
 .title-center {
   text-align: center;
+  border-radius: 8px;
   width: 100%;
   padding: 10px;
   background-color: #fa62a1;
@@ -104,6 +105,82 @@ body {
   color: #fff;
 }
 
+.footer {
+  background-color: #fa62a1;
+  padding: 40px 0;
+  color: #ffffff;
+  font-family: "Georgia", serif;
+}
+
+.footer-title {
+  font-family: "Times New Roman", serif;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer i {
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons li {
+  margin-left: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff81b6;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  border-top: 1px solid #ffffff;
+  padding-top: 10px;
+  color: #ffffff;
+}
+
+.footer .row {
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .text-md-end {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-title {
+    text-align: center;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
+
+
 @media (max-width: 768px) {
   .list-group-item i {
       font-size: 30px;
@@ -130,6 +207,12 @@ body {
   #containerProjetos {
     justify-content: center;
   }
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 }
 @media (min-width: 684px) {
   #containerProjetos {
