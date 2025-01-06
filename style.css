@@ -41,7 +41,7 @@ body {
   margin: 20px auto;
 }
 
-.about-me {
+.about-me, .div-soft-skils {
   background-color: #f9f9f9;
   padding: 30px;
   border-radius: 10px;
@@ -49,20 +49,13 @@ body {
   max-width: 100%;
   margin: 20px auto;
 }
+
 .about-me p {
   font-family: "Georgia", serif;
   font-size: 18px;
   color: #666;
   line-height: 1.6;
   text-align: justify;
-}
-.div-soft-skils {
-  background-color: #f9f9f9;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  margin: 20px auto;
 }
 
 .title-center {
@@ -81,11 +74,13 @@ body {
   list-style: none;
   padding: 0;
 }
+
 .technology-icons i {
   font-size: 3rem;
   color: #333;
   transition: color 0.3s;
 }
+
 .technology-icons i:hover {
   color: #fa62a1;
 }
@@ -169,6 +164,10 @@ body {
   .text-md-end {
     text-align: center;
   }
+
+  .list-group-item i {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -178,21 +177,11 @@ body {
   .footer p {
     text-align: center;
   }
-}
 
-
-@media (max-width: 768px) {
   .list-group-item i {
-      font-size: 30px;
+    font-size: 36px;
   }
 }
-
-@media (max-width: 576px) {
-  .list-group-item i {
-      font-size: 36px; 
-  }
-}
-
 
 @media (max-width: 768px) {
   .logo {
@@ -203,6 +192,7 @@ body {
     width: 70%;
   }
 }
+
 @media (max-width: 684px) {
   #containerProjetos {
     justify-content: center;
@@ -212,8 +202,9 @@ body {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+  }
 }
-}
+
 @media (min-width: 684px) {
   #containerProjetos {
     justify-content: space-between;
@@ -225,6 +216,7 @@ body {
     font-size: 10vw;
   }
 }
-h2{
-  
+
+h2 {
+  /* Tente usar esse espaço para ajustar mais estilos de título se necessário */
 }
