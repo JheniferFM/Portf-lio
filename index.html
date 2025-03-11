@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- links do favicon -->
+  
+  <!-- Links do favicon -->
   <link rel="icon" href="./assets/emoji.png" type="image/png">
   <link rel="shortcut icon" href="./assets/emoji.png" type="image/png">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
   <title>Portfólio</title>
 </head>
-
 <body>
+
+  <!-- Botão para alternar tema -->
+ <button id="theme-toggle">Modo Escuro</button>
+
+
   <!-- Cabeçalho -->
   <header class="d-flex justify-content-between align-items-center p-4 header">
-    <!-- Logo (Seu nome)-->
     <div class="logo">Jhenifer Meneses</div>
-
-    <!-- Mídias sociais (LinkedIn, GitHub, Email) -->
     <div class="w-50">
       <ul class="d-flex justify-content-evenly list-group-horizontal m-0 listSocial">
         <li class="list-group-item fs-2">
@@ -47,90 +46,37 @@
     </div>
   </header>
 
-  <!-- Corpo -->
   <main>
-    <!-- Foto de perfil -->
-    <div class="profile-container">
-      <img src="./assets/FOTO.png" alt="Foto de perfil" class="profile-pic" />
+    <!-- Seção sobre mim -->
+    <div class="about-section d-flex justify-content-between align-items-center p-4">
+      <section id="about" class="about-me">
+        <h2 class="title-center">Sobre Mim</h2>
+        <p>
+          Sou uma profissional em início de carreira com experiência prática adquirida em estágios nas áreas de TI e 
+          análise de dados, com forte interesse em Desenvolvimento de Software, Análise de Dados e Automatização de Processos. 
+          Tenho experiência em trabalhar com Python e SQL, além de ferramentas como Power BI e Tableau para análise e visualização de dados.
+        </p>
+      </section>
+
+      <div class="profile-container">
+        <img src="./assets/FOTO.jpg" alt="Foto de perfil" class="profile-pic" />
+      </div>
     </div>
 
-    <!-- Sobre mim -->
-    <section class="about-me">
-      <h2 class="title-center">Sobre Mim</h2>
-      <p>
-        Sou uma profissional em início de carreira com experiência prática adquirida em estágios nas áreas de TI e 
-        análise de dados, com forte interesse em Desenvolvimento de Software, Análise de Dados e Automatização de Processos. 
-        Tenho experiência em trabalhar com Python e SQL, além de ferramentas como Power BI e Tableau para análise e visualização de dados.Já estágie na área de infraestutura , onde administrava servidores e também já estágiei com desenvolvimento e automação de processos em uma sala de situação . 
-        
-         
-      </p>
-    </section>
-
-    <!-- Tecnologias -->
-    <section class="container-tecnologia">
+    <!-- Seção de Tecnologias -->
+    <div class="container-tecnologia">
       <h2 class="title-center">Tecnologias</h2>
-      <ul class="technology-icons">
-        <li><i class="bi bi-filetype-html" title="HTML5"></i></li>
-        <li><i class="bi bi-filetype-css" title="CSS3"></i></li>
-        <li><i class="bi bi-filetype-js" title="JavaScript"></i></li>
-        <li><i class="bi bi-filetype-py" title="Python"></i></li>
-        <li><i class="bi bi-filetype-sql" title="SQL"></i></li>
-        <li><i class="bi bi-filetype-php" title="PHP"></i></li>
-      </ul>
-    </section>
-
-    <!-- Projetos -->
-    <section class="container-tecnologia">
-      <h2 class="title-center">Projetos</h2>
-      <div class="d-flex p-4 flex-wrap containerProjetos" id="containerProjetos">
-        <!-- Card Conversor de Moedas -->
-        <div class="card mt-4" style="width: 18rem">
-          <img src="./assets/moedas.jpg" class="card-img-top" alt="Cards de projetos" style="height: 15.6rem" />
-          <div class="card-body">
-            <h5 class="card-title">Conversor de moedas</h5>
-            <p class="card-text">Um sistema que permite a conversão de reais em dólar e euro</p>
-            <a href="https://github.com/JheniferFM/Conversor-de-moedas" target="_blank" class="btn w-100 btnGithub"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-
-        <!-- Card Previsão do Tempo -->
-        <div class="card mt-4" style="width: 18rem">
-          <img src="./assets/temp.jpg" class="card-img-top" alt="Cards de projetos" style="height: 15.6rem" />
-          <div class="card-body">
-            <h5 class="card-title">Previsão do tempo</h5>
-            <p class="card-text">Um sistema que permite consultar a temperatura do tempo em diversos lugares.</p>
-            <a href="https://github.com/JheniferFM/Previs-o-do-tempo.git" target="_blank" class="btn w-100 btnGithub"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-
-        <!-- Card Gerador de Senhas -->
-        <div class="card mt-4" style="width: 18rem">
-          <img src="./assets/senhas.jpg" class="card-img-top" alt="Cards de projetos" style="height: 15.6rem" />
-          <div class="card-body">
-            <h5 class="card-title">Gerador de senhas</h5>
-            <p class="card-text">Um sistema que gera diversas senhas aleátorias e seguras com apenas um click.</p>
-            <a href="https://github.com/JheniferFM/Gerador-de-senhas.git" target="_blank" class="btn w-100 btnGithub"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-
-        <!-- Card Sistema de IMC -->
-        <div class="card mt-4" style="width: 18rem">
-          <img src="./assets/imc.png" class="card-img-top" alt="Cards de projetos" style="height: 15.6rem" />
-          <div class="card-body">
-            <h5 class="card-title">Sistema de IMC</h5>
-            <p class="card-text">Um sistema em PHP que calcula o Índice de Massa Corporal (IMC) com base na altura e peso.</p>
-            <!-- Substituindo o botão "Acessar" pelo ícone do GitHub -->
-            <a href="http://localhost/meu_projeto/index.php" target="_blank" class="btn w-100 btnGithub">
-              <i class="bi bi-github"></i> <!-- Ícone do GitHub -->
-            </a>
-          </div>
-        </div>
-
+      <div class="technology-logos">
+        <img src="./assets/html5.png" alt="HTML" class="technology-logo">
+        <img src="./assets/css3.png" alt="CSS" class="technology-logo">
+        <img src="./assets/javascript.png" alt="JavaScript" class="technology-logo">
+        <img src="./assets/python.png" alt="Python" class="technology-logo">
+        <img src="./assets/bootstrap.png" alt="Bootstrap" class="technology-logo">
       </div>
-    </section>
+    </div>
 
     <!-- Soft Skills -->
-    <section class="div-soft-skils">
+    <section id="skills" class="div-soft-skils">
       <h2 class="title-center">Soft Skills</h2>
       <ul class="soft-skills">
         <li><i class="fas fa-bolt"></i> 🚀<strong>Proatividade:</strong> Sempre pronta para assumir a iniciativa...</li>
@@ -164,15 +110,13 @@
       </div>
       <div class="row">
         <div class="col text-center">
-          <p class="footer-copy">© 2024 Jhenifer F. Meneses. All rights reserved.</p>
+          <p class="footer-copy">© 2024 Jhenifer F. Meneses. Todos os direitos reservados.</p>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Bootstrap Javascript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-
-</html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK
+::contentReference[oaicite:0]{index=0}
+ 
