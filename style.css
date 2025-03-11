@@ -1,136 +1,70 @@
-/* Reset básico */
+/* Resetando e estilizando o body */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Cor de fundo e fonte do corpo */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
+  font-family: 'Montserrat', sans-serif; /* Fonte moderna */
+  background-color: #f4f4f4;
   color: #333;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  padding: 0;
-  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Cabeçalho */
-header {
-  background-color: #333;
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header {
+  background-color: #ff3399; /* Alterando a cor do banner */
+  padding: 20px 10%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centralizando o conteúdo do cabeçalho */
 }
 
-header .logo {
-  font-size: 24px;
+.logo {
+  font-size: 2.5rem;
   font-weight: bold;
-}
-
-header .listSocial {
-  display: flex;
-  gap: 20px;
-}
-
-header .list-group-item {
-  background: none;
-  border: none;
-}
-
-header .fs-2 {
-  font-size: 30px;
-}
-
-header .bi {
-  transition: transform 0.3s ease;
-}
-
-header .bi:hover {
-  transform: scale(1.2);
-}
-
-/* Variáveis de cores para o tema claro */
-:root {
-  --background-color-light: #ffffff;
-  --background-color-dark: #000000;
-  --text-color-light: #000000;
-  --text-color-dark: #ffffff;
-}
-
-/* Estilos para o tema claro */
-body {
-  background-color: var(--background-color-light);
-  color: var(--text-color-light);
-}
-
-/* Estilos para o tema escuro */
-body.dark-mode {
-  background-color: var(--background-color-dark);
-  color: var(--text-color-dark);
-}
-
-/* Outros estilos específicos para o tema escuro */
-body.dark-mode header {
-  background-color: #333;
-}
-
-body.dark-mode footer {
-  background-color: #333;
-}
-
-body.dark-mode .logo {
   color: #fff;
 }
 
-body.dark-mode .technology-logo {
-  filter: invert(1);
+.header .title-center {
+  color: #fff;
+  font-size: 3rem; /* Tamanho maior para o título */
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
 }
 
-/* Seção sobre mim (lado a lado) */
+.listSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.list-group-item a {
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.list-group-item a:hover {
+  color: #ff66b2; /* Efeito hover rosa */
+}
+
+/* Seção Sobre Mim */
 .about-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px;
-  flex-direction: row;
+  padding: 60px 10%;
+  background-color: #f0f0f0;
   text-align: center;
+}
+
+.profile-container {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-}
-
-.about-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(169, 169, 169, 0.5));
-  z-index: -1;
-  animation: gradientAnimation 10s infinite alternate;
-}
-
-/* Animação do fundo de gradiente */
-@keyframes gradientAnimation {
-  0% {
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(169, 169, 169, 0.5));
-  }
-  100% {
-    background: linear-gradient(45deg, rgba(169, 169, 169, 0.5), rgba(0, 0, 0, 0.5));
-  }
-}
-
-/* Sobre mim (ajuste da margem e largura) */
-.about-section .about-me {
-  max-width: 45%;
-  margin-left: 30px;
-}
-
-.about-section .profile-container {
-  text-align: center;
-  margin-left: 20px;
 }
 
 .profile-pic {
@@ -138,119 +72,275 @@ body.dark-mode .technology-logo {
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo para as imagens das logos das tecnologias */
-.technology-logos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 50px rgba(255, 51, 153, 0.3);
+}
+
+.about-me {
+  width: 55%;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
   padding: 20px;
 }
 
+.about-me h2 {
+  font-size: 2rem;
+  color: #ff3399;
+}
+
+/* Tecnologias */
+.container-tecnologia {
+  padding: 60px 10%;
+  background-color: #f0f0f0;
+}
+
+/* CENTRALIZAÇÃO DO TÍTULO DE TECNOLOGIAS */
+.container-tecnologia h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff3399;
+  margin-bottom: 40px;
+}
+
+.technology-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .technology-logo {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
+  width: 90px;
+  height: 90px;
+  margin: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .technology-logo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(255, 51, 153, 0.5);
+}
+
+/* Cards de Projetos */
+.card {
+  width: 18rem;
+  margin: 15px;
+  border: 2px solid #ff3399;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 51, 153, 0.3);
+}
+
+.card-title {
+  color: #ff3399;
+}
+
+.card-body {
+  background-color: #fff;
+  color: #333;
+}
+
+.btnGithub {
+  background-color: #ff3399;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btnGithub:hover {
+  background-color: #ff66b2;
 }
 
 /* Soft Skills */
-.div-soft-skills {
-  padding: 50px 20px;
-  background-color: #f7f7f7;
-}
-
-.soft-skills {
-  list-style: none;
-  font-size: 20px;
-  line-height: 1.6;
-}
-
-.soft-skills li {
-  margin: 10px 0;
-}
-
-/* Rodapé */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 40px 20px;
+.div-soft-skils {
+  padding: 50px 10%;
   text-align: center;
 }
 
-footer .social-icons {
+.soft-skills {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.soft-skills li {
+  margin: 20px 0;
+}
+
+.soft-skills i {
+  margin-right: 10px;
+  color: #ff3399;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer .footer-title {
+  font-size: 2rem;
+  color: #ff3399;
+}
+
+.social-icons {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
-}
-
-footer .social-icons li {
-  font-size: 30px;
-}
-
-footer .social-icons li a {
-  color: white;
-  transition: color 0.3s ease;
-}
-
-footer .social-icons li a:hover {
-  color: #007bff;
-}
-
-footer .footer-copy {
   margin-top: 20px;
-  font-size: 14px;
 }
 
-/* Transições suaves e efeitos especiais */
-button {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+.social-icons li {
+  margin: 0 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff3399;
+}
+
+/* Tema escuro (com variações de cinza e preto) */
+body.dark-theme {
+  background: linear-gradient(135deg, #1f1f1f, #333, #262626); /* Gradiente entre vários tons de cinza escuro */
+  color: #e0e0e0;
+}
+
+/* Cabeçalho escuro */
+.dark-theme .header {
+  background-color: #444;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé escuro */
+.dark-theme .footer {
+  background-color: #555;
+}
+
+/* Cartões escuros */
+.dark-theme .card {
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  border: 2px solid #666;
+}
+
+.dark-theme .card:hover {
+  background-color: #444;
+}
+
+/* Seções no Tema Escuro */
+.dark-theme .about-section,
+.dark-theme .container-tecnologia {
+  background-color: #444;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Adicionando sombra interna */
+}
+
+.dark-theme .technology-logo {
+  filter: brightness(0.8);
+}
+
+.dark-theme .technology-logo:hover {
+  filter: brightness(1.1);
+}
+
+.dark-theme .title-center {
+  color: #ff3399;
+}
+
+.dark-theme .soft-skills li {
+  color: #e0e0e0;
+}
+
+.dark-theme .btnGithub {
   background-color: #ff3399;
   color: white;
+}
+
+.dark-theme .btnGithub:hover {
+  background-color: #ff66b2;
+}
+
+.dark-theme .social-icons a {
+  color: #e0e0e0;
+}
+
+.dark-theme .social-icons a:hover {
+  color: #ff3399;
+}
+
+/* Estilo do botão de troca de tema */
+#theme-toggle {
+  background-color: #ff3399;
+  color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
-  background-color: #ff8c00;
+#theme-toggle:hover {
+  background-color: #ff66b2;
+  transform: scale(1.05);
 }
 
-.background-effects {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://www.transparenttextures.com/patterns/brick-wall-1.png') repeat;
-  z-index: -1;
-  pointer-events: none;
-  animation: backgroundAnimation 10s infinite linear;
+#theme-toggle:focus {
+  outline: none;
 }
 
-@keyframes backgroundAnimation {
-  0% {
-    background-color: #00f2fe;
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 20px;
   }
-  50% {
-    background-color: #3f2b96;
+
+  .profile-container {
+    width: 100%;
+    justify-content: center;
   }
-  100% {
-    background-color: #00f2fe;
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-me {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-tecnologia {
+    text-align: center;
+  }
+
+  .technology-logos {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .footer {
+    text-align: center;
   }
 }
