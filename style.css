@@ -33,6 +33,7 @@ body {
   margin-top: 20px;
 }
 
+/* Estilo dos ícones de redes sociais no cabeçalho */
 .listSocial {
   display: flex;
   justify-content: center;
@@ -40,13 +41,18 @@ body {
   margin-top: 15px;
 }
 
+.list-group-item {
+  margin: 0 15px; /* Espaçamento entre os ícones */
+}
+
 .list-group-item a {
-  color: inherit;
-  font-size: 1.2rem;
+  color: #fff; /* Cor inicial dos ícones */
+  font-size: 1.5rem; /* Tamanho dos ícones */
+  transition: color 0.3s ease; /* Efeito de transição na cor */
 }
 
 .list-group-item a:hover {
-  color: #ff66b2; /* Efeito hover rosa */
+  color: #ff3399; /* Efeito hover rosa */
 }
 
 /* Seção Sobre Mim */
@@ -343,4 +349,5 @@ body.dark-theme {
   .footer {
     text-align: center;
   }
+
 }
