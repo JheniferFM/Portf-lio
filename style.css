@@ -100,7 +100,6 @@ body {
   background-color: #f0f0f0;
 }
 
-/* CENTRALIZAÇÃO DO TÍTULO DE TECNOLOGIAS */
 .container-tecnologia h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -128,14 +127,57 @@ body {
   box-shadow: 0 0 10px rgba(255, 51, 153, 0.5);
 }
 
+/* Ferramentas */
+.container-ferramentas {
+  margin-top: 50px;
+  padding: 60px 10%;  /* Adicionando padding para garantir espaçamento adequado */
+}
+
+.container-ferramentas h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff3399;
+  margin-bottom: 40px;
+}
+
+.container-ferramentas .technology-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.container-ferramentas .technology-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-ferramentas .technology-logo:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(255, 51, 153, 0.5);
+}
+
 /* Cards de Projetos */
+.containerProjetos {
+  display: flex;
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  align-items: center;
+  flex-wrap: nowrap; /* Impede que os cards quebrem para a linha de baixo */
+  padding: 40px 10%; /* Espaçamento interno para a container */
+  overflow-x: auto; /* Adiciona rolagem horizontal caso os cards não caibam */
+}
+
 .card {
-  width: 18rem;
-  margin: 15px;
+  flex: 1 1 22%; /* Faz os cards ocuparem o mesmo espaço e se ajustarem */
+  margin: 15px; /* Ajustando as margens verticais */
   border: 2px solid #ff3399;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
   background-color: #fff;
+  text-align: center; /* Centraliza conteúdo do card */
 }
 
 .card:hover {
@@ -247,7 +289,8 @@ body.dark-theme {
 
 /* Seções no Tema Escuro */
 .dark-theme .about-section,
-.dark-theme .container-tecnologia {
+.dark-theme .container-tecnologia,
+.dark-theme .container-ferramentas {
   background-color: #444;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Adicionando sombra interna */
 }
@@ -328,7 +371,7 @@ body.dark-theme {
     text-align: center;
   }
 
-  .container-tecnologia {
+  .container-tecnologia, .container-ferramentas {
     text-align: center;
   }
 
@@ -337,7 +380,7 @@ body.dark-theme {
   }
 
   .card {
-    width: 100%;
+    width: 100%; /* Cards ocupando 100% da largura em telas pequenas */
   }
 
   .footer {
