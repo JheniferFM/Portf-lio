@@ -11,7 +11,7 @@ themeButton.addEventListener("click", () => {
     localStorage.setItem('theme', 'dark');
   } else {
     localStorage.setItem('theme', 'light');
-  }
+  }8
 });
 
 // Verificar o tema salvo ao carregar a página

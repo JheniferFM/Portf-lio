@@ -21,22 +21,24 @@
 </head>
 <body>
 
-  <!-- Botão para alternar tema -->
-  <button id="theme-toggle" class="btn btn-secondary">Modo Escuro</button> <!-- Adicionei uma classe do Bootstrap para o botão -->
-
   <!-- Cabeçalho -->
   <header class="d-flex justify-content-between align-items-center p-4 header">
     <div class="logo">Jhenifer Meneses</div>
-    <div class="w-50">
-      <ul class="d-flex justify-content-evenly list-group-horizontal m-0 listSocial">
-        <div class="col-md-6 text-md-end">
-          <ul class="social-icons">
-            <li><a href="https://github.com/JheniferFM" target="_blank"><i class="bi bi-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/jhenifer-meneses-98293b300" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-            <li><a href="mailto:Jhenifer.meneses10@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
-          </ul>
-        </div>
-      </ul>
+    <div class="d-flex align-items-center">
+      <!-- Botão para alternar tema -->
+      <button id="theme-toggle" class="btn btn-secondary">Modo Escuro</button> <!-- Alterado para ficar à direita -->
+
+      <div class="w-50">
+        <ul class="d-flex justify-content-evenly list-group-horizontal m-0 listSocial">
+          <div class="col-md-6 text-md-end">
+            <ul class="social-icons">
+              <li><a href="https://github.com/JheniferFM" target="_blank"><i class="bi bi-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/jhenifer-meneses-98293b300" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="mailto:Jhenifer.meneses10@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -44,14 +46,17 @@
     <!-- Seção sobre mim -->
     <section id="about" class="about-me">
       <h2 class="title-center">Sobre Mim</h2>
-      <p>
-        Sou uma profissional em início de carreira com experiência prática adquirida em estágios nas áreas de TI e 
-        análise de dados, com forte interesse em Desenvolvimento de Software, Análise de Dados e Automatização de Processos. 
-        Tenho experiência em trabalhar com Python e SQL, além de ferramentas como Power BI e Tableau para análise e visualização de dados.
-      </p>
-
-      <div class="profile-container">
-        <img src="./assets/FOTO.jpg" alt="Foto de perfil" class="profile-pic" />
+      <div class="d-flex align-items-center">
+        <div class="w-50">
+          <p>
+            Sou uma profissional em início de carreira com experiência prática adquirida em estágios nas áreas de TI e 
+            análise de dados, com forte interesse em Desenvolvimento de Software, Análise de Dados e Automatização de Processos. 
+            Tenho experiência em trabalhar com Python e SQL, além de ferramentas como Power BI e Tableau para análise e visualização de dados.
+          </p>
+        </div>
+        <div class="profile-container w-50">
+          <img src="./assets/FOTO.jpg" alt="Foto de perfil" class="profile-pic img-fluid" />
+        </div>
       </div>
     </section>
 
@@ -64,22 +69,22 @@
         <img src="./assets/javascript.png" alt="JavaScript" class="technology-logo">
         <img src="./assets/python.png" alt="Python" class="technology-logo">
         <img src="./assets/java.png" alt="Java" class="technology-logo">
-        <img src="./assets/kmp.png" alt="KMP" class="technology-logo"> <!-- Corrigi a capitalização para KMP -->
+        <img src="./assets/kmp.png" alt="KMP" class="technology-logo">
         <img src="./assets/php.png" alt="PHP" class="technology-logo">
+        <img src="./assets/nodejs.png" alt="Node.js" class="technology-logo">
       </div>
     </section>
-    <!-- Seção de Ferramentas -->
-<section class="container-ferramentas">
-  <h2 class="title-center">Ferramentas</h2>
-  <div class="technology-logos">
-    <img src="./assets/power.png" alt="Power BI" class="technology-logo"> <!-- Exemplo de ferramenta -->
-    <img src="./assets/git.png" alt="git" class="technology-logo"> <!-- Exemplo de ferramenta -->
-    <img src="./assets/zabbix.png" alt="zabbix" class="technology-logo"> <!-- Exemplo de ferramenta -->
-    <img src="./assets/grafana.png" alt="Grafana" class="technology-logo"> <!-- Exemplo de ferramenta -->
-   
-  </div>
-</section>
 
+    <!-- Seção de Ferramentas -->
+    <section class="container-ferramentas">
+      <h2 class="title-center">Ferramentas</h2>
+      <div class="technology-logos">
+        <img src="./assets/power.png" alt="Power BI" class="technology-logo">
+        <img src="./assets/git.png" alt="git" class="technology-logo">
+        <img src="./assets/zabbix.png" alt="zabbix" class="technology-logo">
+        <img src="./assets/grafana.png" alt="Grafana" class="technology-logo">
+      </div>
+    </section>
 
     <!-- Projetos -->
     <section class="container-tecnologia">
@@ -126,24 +131,56 @@
         </div>
       </div>
     </section>
+    <!-- Seção de Experiências Profissionais -->
+<section id="experiencias" class="experiencias">
+  <h2 class="title-center">Experiências </h2>
+  
+  <!-- Experiência 1 -->
+ <!-- Experiência 1: Igut -->
+<div class="experiencia">
+  <h3>Experiência 1: Igut</h3>
+  <p><strong>Cargo:</strong> Estagiária de Infraestrutura de TI</p>
+  <p><strong>Período:</strong> Setembro/2024</p>
+  <p>
+    Durante minha experiência na Igut, fui responsável por auxiliar na manutenção da infraestrutura de TI, incluindo a configuração e monitoramento de servidores, além de realizar a administração de redes internas. Trabalhei diretamente com a equipe de TI na identificação de problemas de hardware e software, contribuindo para a melhoria da estabilidade dos sistemas da empresa.
+  </p>
+  
+</div>
+
+<!-- Experiência 2: Organização do Tratado de Cooperação Amazônica (OTCA) -->
+<div class="experiencia">
+  <h3>Experiência 2: Organização do Tratado de Cooperação Amazônica (OTCA)</h3>
+  <p><strong>Cargo:</strong> Estagiária de Desenvolvimento de Automatização e BI</p>
+  <p><strong>Período:</strong> Novembro/2024</p>
+  <p>
+    Na OTCA, atuei no desenvolvimento de soluções de automatização de processos, além de auxiliar na análise de dados para criar relatórios de Business Intelligence (BI). Utilizei ferramentas como Power BI e Python para automatizar relatórios mensais e criar dashboards interativos que ajudaram a diretoria a tomar decisões mais ágeis e precisas.
+  </p>
+  <p>
+    Um dos principais desafios foi integrar diferentes fontes de dados provenientes de oito países membros da OTCA, cada um com suas especificidades e sistemas de dados distintos. Para isso, estabeleci uma comunicação constante com as equipes de TI desses países, garantindo que os dados fossem coletados de forma padronizada e segura, facilitando sua análise e visualização.
+  
+</div>
+
+<!-- Experiência 3: Defensoria Pública do Distrito Federal (DPDF) -->
+<div class="experiencia">
+  <h3>Experiência 3: Defensoria Pública do Distrito Federal (DPDF)</h3>
+  <p><strong>Cargo:</strong> Estagiária de Desenvolvimento de TI</p>
+  <p><strong>Período:</strong> Janeiro/2025 - Atual</p>
+  <p>Atualmente, estou estagiando na Defensoria Pública do Distrito Federal (DPDF), onde apoio no desenvolvimento e manutenção de sistemas internos. Atuando como desenvolvedora Full Stack, participo de todas as etapas do desenvolvimento de sistemas, desde o planejamento até a implementação e manutenção. 
+  </p>
+  <p>Um dos maiores desafios tem sido conciliar o desenvolvimento ágil com as exigências legais de segurança e sigilo, mas até agora, conseguimos superar esses obstáculos, mantendo a confidencialidade e segurança dos dados enquanto entregamos soluções inovadoras e funcionais.
+  </p>
+</div>
+
 
     <!-- Soft Skills -->
     <section id="skills" class="div-soft-skills">
       <h2 class="title-center">Soft Skills</h2>
       <ul class="soft-skills">
-<<<<<<< HEAD
-        <li><i class="fas fa-bolt"></i> 🚀 <strong>Proatividade:</strong> Sempre pronta para assumir a iniciativa...</li>
-        <li><i class="fas fa-comments"></i> 🚀 <strong>Boa Comunicação:</strong> Habilidade para se comunicar...</li>
-        <li><i class="fas fa-laptop-code"></i> 🚀 <strong>Conhecimento Técnico:</strong> Amplo conhecimento...</li>
-        <li><i class="fas fa-briefcase"></i> 🚀 <strong>Conhecimento de Negócios:</strong> Compreensão sólida...</li>
-        <li><i class="fas fa-sync"></i> 🚀 <strong>Dinamismo:</strong> Capacidade de se adaptar rapidamente...</li>
-=======
         <li><i class="fas fa-bolt"></i> 🚀<strong>Proatividade:</strong> Sempre pronta para assumir a iniciativa.</li>
         <li><i class="fas fa-comments"></i> 🚀<strong>Boa comunicação:</strong> Habilidade para se comunicar.</li>
         <li><i class="fas fa-laptop-code"></i> 🚀<strong>Conhecimento técnico:</strong> Amplo conhecimento.</li>
         <li><i class="fas fa-briefcase"></i> 🚀<strong>Conhecimento de negócios:</strong> Compreensão sólida.</li>
         <li><i class="fas fa-sync"></i> 🚀<strong>Dinamismo:</strong> Capacidade de se adaptar rapidamente.</li>
->>>>>>> 6da788686264c6647fc1b566842f151fb0e13730
       </ul>
     </section>
   </main>

@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif; /* Fonte moderna */
+  font-family: 'Lora', serif; /* Fonte mais suave e elegante para o corpo do texto */
   background-color: #f4f4f4;
   color: #333;
   transition: background-color 0.3s, color 0.3s;
@@ -24,14 +24,21 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
+  font-family: 'Poppins', sans-serif; /* Fonte mais chamativa para o logo */
 }
 
 .header .title-center {
   color: #fff;
   font-size: 3rem; /* Tamanho maior para o título */
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; /* Títulos com fonte Poppins para dar destaque */
   margin-top: 20px;
+  text-align: center; /* Centraliza o título */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura */
+  display: block; /* Garante que o título seja tratado como um bloco */
+  margin-left: auto; /* Garante que a margem esquerda seja automática */
+  margin-right: auto; /* Garante que a margem direita seja automática */
 }
+
 
 /* Estilo dos ícones de redes sociais no cabeçalho */
 .listSocial {
@@ -58,15 +65,16 @@ body {
 /* Seção Sobre Mim */
 .about-section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Alinha os itens à esquerda */
   align-items: center;
-  padding: 60px 10%;
+  padding: 1090%;
   background-color: #f0f0f0;
-  text-align: center;
+  text-align: left; /* Alinhamento do texto */
+  gap: 0px; /* Adicionando espaço entre a foto e o texto */
 }
 
 .profile-container {
-  width: 35%;
+  width: 30%; /* Diminuindo o tamanho para dar mais espaço ao texto */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,8 +82,8 @@ body {
 }
 
 .profile-pic {
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -88,16 +96,17 @@ body {
 }
 
 .about-me {
-  width: 55%;
+  width: 100%; /* Ajuste de largura para dar mais espaço ao texto */
   font-size: 1.1rem;
   line-height: 1.8;
   text-align: left;
-  padding: 20px;
+  padding: 120px;
 }
 
 .about-me h2 {
   font-size: 2rem;
   color: #ff3399;
+  font-family: 'Poppins', sans-serif; /* Fonte chamativa para os subtítulos */
 }
 
 /* Tecnologias */
@@ -112,6 +121,7 @@ body {
   font-weight: bold;
   color: #ff3399;
   margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif; /* Fonte moderna para os subtítulos */
 }
 
 .technology-logos {
@@ -145,6 +155,7 @@ body {
   font-weight: bold;
   color: #ff3399;
   margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif; /* Fonte moderna para os subtítulos */
 }
 
 .container-ferramentas .technology-logos {
@@ -182,7 +193,7 @@ body {
   border: 2px solid #ff3399;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #a73131;
   text-align: center; /* Centraliza conteúdo do card */
 }
 
@@ -193,11 +204,13 @@ body {
 
 .card-title {
   color: #ff3399;
+  font-family: 'Poppins', sans-serif; /* Fonte chamativa para o título do card */
 }
 
 .card-body {
   background-color: #fff;
   color: #333;
+  font-family: 'Lora', serif; /* Fonte mais suave para o conteúdo do card */
 }
 
 .btnGithub {
@@ -205,36 +218,49 @@ body {
   color: white;
   border-radius: 5px;
   padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif; /* Fonte moderna e forte para o botão */
 }
 
 .btnGithub:hover {
   background-color: #ff66b2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 51, 153, 0.3);
 }
 
-/* Soft Skills */
-.div-soft-skils {
-  padding: 50px 10%;
-  text-align: center;
-}
 
+
+.title-center{
+   color: #ff66b2;
+  font-size: 3rem; /* Tamanho maior para o título */
+  font-family: 'Poppins', sans-serif; /* Títulos com fonte Poppins para dar destaque */
+  margin-top: 20px;
+  text-align: center; /* Centraliza o título */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura */
+  display: block; /* Garante que o título seja tratado como um bloco */
+  margin-left: auto; /* Garante que a margem esquerda seja automática */
+  margin-right: auto; /* Garante que a margem direita seja automática */
+}
 .soft-skills {
   list-style-type: none;
   padding: 0;
   font-size: 1.2rem;
+  font-family: 'Lora', serif; /* Fonte suave para as soft skills */
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  flex-direction: column; /* Alinha os itens na coluna */
+  gap: 20px; /* Espaçamento entre as soft skills */
 }
 
-.soft-skills li {
-  margin: 20px 0;
-}
 
-.soft-skills i {
-  margin-right: 10px;
-  color: #ff3399;
-}
+
 
 /* Rodapé */
 .footer {
-  background-color: #333;
+  background-color: #3e2939;
   color: #fff;
   padding: 20px 0;
 }
@@ -242,6 +268,7 @@ body {
 .footer .footer-title {
   font-size: 2rem;
   color: #ff3399;
+  font-family: 'Poppins', sans-serif; /* Fonte chamativa para o título do rodapé */
 }
 
 .social-icons {
@@ -262,19 +289,19 @@ body {
 }
 
 .social-icons a:hover {
-  color: #ff3399;
+  color: #ff2599;
 }
 
 /* Tema escuro (com variações de cinza e preto) */
 body.dark-theme {
-  background: linear-gradient(135deg, #1f1f1f, #333, #262626); /* Gradiente entre vários tons de cinza escuro */
+  background: linear-gradient(135deg, #01031f, #01041b, #01081a); /* Gradiente entre vários tons de cinza escuro */
   color: #e0e0e0;
 }
 
 /* Cabeçalho escuro */
 .dark-theme .header {
   background-color: #444;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(7, 1, 44, 0.2);
 }
 
 /* Rodapé escuro */
@@ -284,7 +311,7 @@ body.dark-theme {
 
 /* Cartões escuros */
 .dark-theme .card {
-  background-color: #3a3a3a;
+  background-color: #110a0a;
   color: #e0e0e0;
   border: 2px solid #666;
 }
@@ -298,7 +325,7 @@ body.dark-theme {
 .dark-theme .container-tecnologia,
 .dark-theme .container-ferramentas {
   background-color: #444;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Adicionando sombra interna */
+  box-shadow: inset 0 0 10px rgb(1, 1, 24); /* Adicionando sombra interna */
 }
 
 .dark-theme .technology-logo {
@@ -309,9 +336,7 @@ body.dark-theme {
   filter: brightness(1.1);
 }
 
-.dark-theme .title-center {
-  color: #ff3399;
-}
+
 
 .dark-theme .soft-skills li {
   color: #e0e0e0;
@@ -326,71 +351,241 @@ body.dark-theme {
   background-color: #ff66b2;
 }
 
-.dark-theme .social-icons a {
-  color: #e0e0e0;
-}
-
-.dark-theme .social-icons a:hover {
-  color: #ff3399;
-}
-
-/* Estilo do botão de troca de tema */
+/* Estilizando o botão de alternância de tema */
 #theme-toggle {
-  background-color: #ff3399;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #fff;
-  padding: 10px 20px;
+  background-color: #d65397;
   border: none;
-  border-radius: 30px;
+  border-radius: 50px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* Espaçamento entre ícone e texto */
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #theme-toggle:hover {
   background-color: #ff66b2;
-  transform: scale(1.05);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 #theme-toggle:focus {
   outline: none;
+  box-shadow: 0 0 15px rgba(255, 51, 153, 0.5);
 }
 
-/* Media Queries para Responsividade */
+#theme-toggle i {
+  font-size: 1.5rem; /* Aumentando o ícone */
+  transition: transform 0.3s ease;
+}
+
+/* Alterando o ícone quando o tema escuro for ativado */
+body.dark-theme #theme-toggle i {
+  transform: rotate(180deg); /* Rotação do ícone */
+}
+
+/* Ícone para o tema claro (Sol) */
+body:not(.dark-theme) #theme-toggle i {
+  content: url('https://img.icons8.com/ios/50/ffffff/sun.png'); /* Ícone de sol */
+}
+
+/* Ícone para o tema escuro (Lua) */
+body.dark-theme #theme-toggle i {
+  content: url('https://img.icons8.com/ios/50/ffffff/moon.png'); /* Ícone de lua */
+}
+
+/* Alteração de cor do texto do botão */
+body.dark-theme #theme-toggle {
+  background-color: #444;
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme #theme-toggle:hover {
+  background-color: #ff66b2;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Transição suave para o botão */
+body.dark-theme #theme-toggle i {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.9;
+}
+/* Seção de Experiências Profissionais */
+.experiencias {
+  padding: 60px 10%;
+  background-color: #f9f9f9; /* Fundo claro */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.dark-theme .experiencias {
+  background-color: #333; /* Fundo escuro */
+}
+
+/* Título das Experiências */
+.experiencias h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff3399;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s; /* Transição suave para o tema */
+}
+
+.dark-theme .experiencias h2 {
+  color: #ff66b2; /* Cor de título para o tema escuro */
+}
+
+/* Caixa de cada experiência */
+.experiencia {
+  background-color: #fff; /* Fundo claro */
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
+}
+
+.dark-theme .experiencia {
+  background-color: #444; /* Fundo escuro */
+  color: #e0e0e0; /* Texto claro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+/* Título de cada experiência */
+.experiencia h3 {
+  font-size: 1.8rem;
+  color: #ff3399;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s;
+}
+
+.dark-theme .experiencia h3 {
+  color: #ff66b2; /* Cor do título no tema escuro */
+}
+
+/* Descrição de cada experiência */
+.experiencia p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+
+.dark-theme .experiencia p {
+  color: #e0e0e0; /* Texto claro no tema escuro */
+}
+
+/* Destaque para o nome das empresas ou projetos */
+.experiencia strong {
+  font-weight: bold;
+  color: #ff3399;
+  transition: color 0.3s;
+}
+
+.dark-theme .experiencia strong {
+  color: #ff66b2; /* Cor de destaque no tema escuro */
+}
+
+/* Adicionando um pequeno ícone para cada experiência */
+.experiencia-icon {
+  font-size: 1.5rem;
+  color: #ff3399;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.dark-theme .experiencia-icon {
+  color: #ff66b2; /* Cor do ícone no tema escuro */
+}
+
+/* Animando o botão de "Saiba mais" */
+.experiencia .btnSaibaMais {
+  background-color: #ff3399;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.experiencia .btnSaibaMais:hover {
+  background-color: #ff66b2;
+  transform: scale(1.05);
+}
+
+/* Ajustando a fonte para o tema escuro */
+body.dark-theme .experiencia p {
+  color: #e0e0e0; /* Garantir que o texto fique visível no tema escuro */
+}
+
+/* Transições gerais e efeitos */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
 @media (max-width: 768px) {
-  .about-section {
+  .header {
+    padding: 20px 5%;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .header .title-center {
+    font-size: 2.5rem;
+  }
+
+  .listSocial {
     flex-direction: column;
-    padding: 20px;
+    margin-top: 10px;
   }
 
-  .profile-container {
-    width: 100%;
-    justify-content: center;
+  .list-group-item {
+    margin: 10px 0;
   }
-
-  .profile-pic {
-    width: 180px;
-    height: 180px;
-  }
-
-  .about-me {
-    width: 100%;
-    text-align: center;
-  }
-
-  .container-tecnologia, .container-ferramentas {
-    text-align: center;
+}
+@media (max-width: 768px) {
+  .container-tecnologia h2,
+  .container-ferramentas h2 {
+    font-size: 2rem;
   }
 
   .technology-logos {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .card {
-    width: 100%; /* Cards ocupando 100% da largura em telas pequenas */
+  .technology-logo {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
   }
-
+}
+@media (max-width: 480px) {
   .footer {
-    text-align: center;
+    padding: 15px 5%;
   }
 
+  .footer .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons li {
+    margin: 10px 0;
+  }
 }
